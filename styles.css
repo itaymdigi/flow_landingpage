@@ -1049,3 +1049,84 @@ model-viewer {
         padding: 0.4rem 0.7rem;
     }
 }
+
+@media (max-width: 768px) {
+    /* הגדלת סרגל הניווט */
+    .side-nav {
+        right: 0.5rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .nav-dot {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* הגדלת הסרטונים */
+    .video-container {
+        margin: 0 -1rem;
+        width: calc(100% + 2rem);
+        height: 250px;  /* גובה קבוע לסרטונים */
+    }
+
+    .video-container iframe {
+        height: 250px;
+    }
+
+    /* התאמת טקסט המחקר */
+    .research-text {
+        padding: 0;
+        width: 100%;
+    }
+
+    .research-text p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    /* הגדלת טקסט בדגם */
+    .model-text p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    /* שיפור מרווחים בכותרות */
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+
+    /* התאמת רוחב התוכן */
+    .research-content,
+    .model-content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+/* התאמות למסכים קטנים מאוד */
+@media (max-width: 480px) {
+    .video-container {
+        height: 200px;
+    }
+
+    .video-container iframe {
+        height: 200px;
+    }
+
+    .research-text p,
+    .model-text p {
+        font-size: 1rem;
+        padding: 0;
+    }
+}
