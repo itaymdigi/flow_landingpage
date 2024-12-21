@@ -960,3 +960,92 @@ model-viewer {
         font-size: 1rem;
     }
 }
+
+/* עדכון כללי למובייל */
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1rem;
+    }
+
+    /* שיפור מרווחים בטקסט */
+    p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+    }
+
+    /* הגדלת תמונות */
+    .about-image,
+    .robot-image,
+    .gallery-item img {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    /* שיפור מרווחים בגלריה */
+    .research-gallery {
+        gap: 2rem;
+    }
+
+    .gallery-item {
+        margin-bottom: 2rem;
+    }
+
+    .gallery-item img {
+        height: auto;
+        min-height: 250px;
+    }
+
+    /* התאמת וידאו */
+    .video-container {
+        margin: 0 -1rem;
+        width: calc(100% + 2rem);
+    }
+
+    /* שיפור מרווחים בכותרות */
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /* שיפור מרווחים בתגיות */
+    .tag {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+        margin: 0.3rem;
+    }
+
+    /* התאמת טופס יצירת קשר */
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    /* הגדלת רווחים בין סקציות */
+    section + section {
+        margin-top: 3rem;
+    }
+}
+
+/* התאמות נוספות למסכים קטנים מאוד */
+@media (max-width: 480px) {
+    p {
+        font-size: 0.95rem;
+    }
+
+    .gallery-item img {
+        min-height: 200px;
+    }
+
+    .tag {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.7rem;
+    }
+}
