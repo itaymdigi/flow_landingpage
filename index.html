@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <title>Flow #2333 - FLL Robotics Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="side-nav">
+        <a href="#hero" class="nav-dot" data-tooltip="ראשי"></a>
+        <a href="#about" class="nav-dot" data-tooltip="אודות"></a>
+        <a href="#research" class="nav-dot" data-tooltip="מחקר"></a>
+        <a href="#model" class="nav-dot" data-tooltip="דגם"></a>
+        <a href="#robot" class="nav-dot" data-tooltip="הרובוט שלנו"></a>
+        <a href="#runs" class="nav-dot" data-tooltip="הרצות רובוט"></a>
+        <a href="#team" class="nav-dot" data-tooltip="הצוות"></a>
+        <a href="#downloads" class="nav-dot" data-tooltip="הורדות"></a>
+        <a href="#contact" class="nav-dot" data-tooltip="צור קשר"></a>
+    </nav>
+
+    <section id="hero" class="hero">
+        <img src="project/assets/images/flow logo.jpeg" alt="Flow Logo" class="hero-logo">
+        <h1>flow #2333<br><span class="highlight">fll robotics team</span></h1>
+        <p class="subtitle">באתר תוכלו לראות את ההתקדמותינו בכל תחומי הרובוטיקה</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>אודות הקבוצה</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    אנחנו קבוצת Flow #2333 בתיכון הנדסאים הרצליה, בתוכנית FLL.
+                </p>
+                <p>
+                    קבוצתינו מורכבת מ-13 תלמידי כיתה ח' ושלושה מנטורים ובמהלך שנה זו התגבשנו ולמדנו איך לעבוד בצוות במקצועיות, אדיבות והנאה.
+                </p>
+                <p>
+                    הרחבנו את הידע שלנו בתכנות הרובוט, בניית זרועות ותכנון אסטרטגיות אופטימליות.
+                </p>
+                <p>
+                    למדנו לעומ�� על האוקיינוס ואיך לעזור לחקור אותו בצורה טובה יותר.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="project/assets/images/team/47759ad2-f4fb-40ca-afa0-df917090d199.jpeg" 
+                     alt="תמונת הקבוצה">
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="research">
+        <h2>מחקר</h2>
+        <div class="research-content">
+            <div class="research-text">
+                <p>
+                    השנה, במסגרת המחקר, התבקשנו לענות על השאלה השנתית: <strong>"איך נוכל לעזור לחוקרים לחקור את האוקיינוס?"</strong>
+                </p>
+                <p>
+                    השלב הראשון במציאת תשובה היה זיהוי בעיה קיימת בחקר האוקיינוס. לא היה קשה למצוא בעיה כזו, שכן תחום חקר הים מתמודד עם אתגרים רבים.
+                    בתחילה, העלינו רעיונות כמו שיפור עמידות צוללות ללחץ בעומק הים או פיתוח שיטות לזיהוי בעלי חיים בעלי דם קר ללא שימוש באור מלאכותי.
+                    עם זאת, הבנו שפיתוח פתרונת לאתגרים אלו אינו ריאלי עבור הקבוצה שלנו, מאחר והם דורשים תקציב עצום ומשאבים של חברות גדולות, שחלקן כבר עוסקות בפיתוח בתחומים אלו.
+                </p>
+                <p>
+                    הבנו שעלינו להתמקצע באתגר מתת-תחום קטן יותר, בו יש פחות תחרות אך עדיין צורך ממשי בשיפור.
+                    כדי למצוא את הבעיה המתאימה, השתמשנו בשיטת <strong>"שירוש"</strong> – בחרנו תחומי בעיות מרכזיים:
+                </p>
+                <ul>
+                    <li>בעיות בציוד המחקר</li>
+                    <li>בעיות בשיטות המחקר</li>
+                    <li>בעיות בניתוח הנתונים שנאספים מהמחקר</li>
+                </ul>
+                <p>
+                    הגענו לשלושת התחומים הללו לאחר פגישה עם ד"ר מיכאל מארגון <strong>Deep Voice</strong>, שסיפר לנו כי ניתוח המידע המגיע מחיישנים בים הוא תהליך שלוקח זמן רב ודורש כוח אדם משמעותי.
+                </p>
+                <p>
+                    לבסוף, בחרנו להתמקד בבעיות בציוד המחקר. הסיבה לכך היא שבתחומי הבעיות האחרים נדרשים פתרונות תוכנה, מה שעלול להקשות עלינו בפיתוח דגם מוחשי לפתרון הסופי.
+                </p>
+                <p>
+                    לאחר מכן, צמצמנו את ההתמקדות לתחום ה<strong>ביופאולינג</strong> – תופעה המתוארת כ<strong>"חלודה אורגנית"</strong>.
+                    כל מצע שבא במגע עם מי הים נחשף להדבקה של מיקרואורגניזמים, הפוגעים בציוד וגורמים לנזק לחיישנים לאורך זמן. נזקי הביופאולינג מוערכים בעלות של עד <strong>16 מיליארד דולר בשנה</strong> ברחבי העולם.
+                </p>
+                <p>
+                    כיום קיימים חומרים המגנים מפני ביופאולינג, אך השפעתם דועכת עם הזמן, מה שמחייב חידוש תכוף של הציפוי. החיסרון המרכזי הוא חוסר ידיעה מדויקת מתי יש לחדש את הציפוי, מה שמוביל להוצאות תחזוקה גבוהות.
+                </p>
+                <p>
+                    לכן, התמקדנו בפיתוח פתרון שיספק <strong>אינדיקציה מדויקת למצב הציפוי</strong>, כך שניתן יהיה לדעת מתי יש לחדש אותו ובכך להפחית עלויות ולקצר זמני תחזוקה.
+                    כיום קיימות מערכות לזיהוי מוקדם של ביופאולינג, אך רובן בשלבי פיתוח ואינן זמינות באופן נרחב בשוק.
+                </p>
+            
+            </div>
+            
+            <div class="research-gallery">
+                <div class="gallery-item">
+                    <img src="project/assets/images/biofouling_creation.jpeg" alt="אב טיפוס">
+                    <p>היווצרות ביופאולינג על מצעים ימיים</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="project\assets\images\zoom_with_michael.jpeg" alt="מפגש עם מומחה בתחום">
+                    <p>מפגש עם מומחה בתחום</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="project\assets\images\research_degem_image.jpeg" alt="הדגם שפיתחנו">
+                    <p>מודל הדגם שפיתחנו</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="model" class="model">
+        <h2>דגם</h2>
+        <div class="model-content">
+            <div class="model-text">
+                <p>תיאור הדגם והפתרון שפיתחנו...</p>
+            </div>
+            <div class="model-viewer-container">
+                <model-viewer
+                    src="project\assets\3d models\landingpage model.glb"
+                    alt="3D model of our project"
+                    auto-rotate
+                    camera-controls
+                    shadow-intensity="1"
+                    exposure="0.75"
+                ></model-viewer>
+            </div>
+        </div>
+    </section>
+
+    <section id="robot" class="robot">
+        <h2>הרובוט שלנו</h2>
+        <div class="robot-content">
+            <div class="robot-image">
+                <img src="https://placehold.co/800x600/D3D3D3/444444?text=הרובוט+שלנו" 
+                     alt="הרובוט">
+            </div>
+            <div class="robot-text">
+                <h3>מפרט טכני</h3>
+                <ul>
+                    <li>גודל: 15 על 19 על 13 (לגומטר)</li>
+                    <li>חיישנים: צבע, מרחק, ג'ירו</li>
+                    <li>חלקים: 1000+ חלקי לגו</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="runs" class="robot-runs">
+        <h2>הרצות רובוט</h2>
+        <div class="total-score">
+            <span>סה"כ נקודות</span>
+            <h2 class="big-score">320 / 620</h2>
+        </div>
+        <div class="runs-grid">
+            <div class="run-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="run-details">
+                    <div class="run-header">
+                        <h3>הרצה #1</h3>
+                        <span class="run-score">85 נקודות</span>
+                    </div>
+                    <div class="mission-tags">
+                        <span class="tag">משימה 1 - 20 נק'</span>
+                        <span class="tag">משימה 2 - 20 נק'</span>
+                        <span class="tag">משימה 3 - 20 נק'</span>
+                        <span class="tag">משימה 4 - 20 נק'</span>
+                        <span class="tag">שימה 14 - 5 נק'</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="run-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" 
+                            frameborder="0" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="run-details">
+                    <div class="run-header">
+                        <h3>הרצה #2</h3>
+                        <span class="run-score">80 נקודות</span>
+                    </div>
+                    <div class="mission-tags">
+                        <span class="tag">משימה 5 - 30 נק'</span>
+                        <span class="tag">משימה 6 - 30 נק'</span>
+                        <span class="tag">משימה 7 - 20 נק'</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="run-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="run-details">
+                    <div class="run-header">
+                        <h3>הרצה #3</h3>
+                        <span class="run-score">40 נקודות</span>
+                    </div>
+                    <div class="mission-tags">
+                        <span class="tag">משימה 9 - 20 נק'</span>
+                        <span class="tag">משימה 15 - 20 נק'</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="run-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="run-details">
+                    <div class="run-header">
+                        <h3>הרצה #4</h3>
+                        <span class="run-score">10 נקודות</span>
+                    </div>
+                    <div class="mission-tags">
+                        <span class="tag">משימה 14 - 10 נק'</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="run-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="run-details">
+                    <div class="run-header">
+                        <h3>הרצה #5</h3>
+                        <span class="run-score">65 נקודות</span>
+                    </div>
+                    <div class="mission-tags">
+                        <span class="tag">משימה 11 - 30 נק'</span>
+                        <span class="tag">משימה 12 - 35 נק'</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <h2>הצוות שלנו</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://placehold.co/180x180/CCCCCC/555555?text=חבר+צוות" alt="חבר צוות">
+                </div>
+                <div class="member-info">
+                    <h3>ישראל ישראלי</h3>
+                    <p class="member-age">גיל: 14</p>
+                    <a href="mailto:israel@example.com" class="member-email">israel@example.com</a>
+                </div>
+            </div>
+            <!-- Repeat for other team members -->
+        </div>
+    </section>
+
+    <section id="downloads" class="downloads">
+        <h2>הורדות</h2>
+        <div class="downloads-container">
+            <div class="download-links">
+                <a href="#" class="download-link">
+                    <span class="download-icon">📄</span>
+                    <span class="download-text">MiniPC Rugged Data Sheet</span>
+                </a>
+                <a href="#" class="download-link">
+                    <span class="download-icon">📄</span>
+                    <span class="download-text">Mooring Buoy Data Sheet</span>
+                </a>
+                <a href="#" class="download-link">
+                    <span class="download-icon">📄</span>
+                    <span class="download-text">Stainless Steel Box Data Sheet</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>צור קשר</h2>
+        <p class="contact-subtitle">רוצים לדעת עוד? נשמח לענות על כל שאלה</p>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="user_name" placeholder="שם מלא" required>
+                <input type="email" name="user_email" placeholder="אימייל" required>
+                <textarea name="message" placeholder="הודעה" rows="4" required></textarea>
+                <button type="submit" class="submit-btn">שלח</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Flow #2333 © 2024</p>
+    </footer>
+
+    <div id="fullscreen-video" class="fullscreen-video">
+        <button class="close-video" onclick="closeFullscreenVideo()">×</button>
+        <div class="video-wrapper">
+            <iframe id="fullscreen-iframe" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openFullscreenVideo(videoId) {
+            const fullscreenVideo = document.getElementById('fullscreen-video');
+            const iframe = document.getElementById('fullscreen-iframe');
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            fullscreenVideo.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeFullscreenVideo() {
+            const fullscreenVideo = document.getElementById('fullscreen-video');
+            const iframe = document.getElementById('fullscreen-iframe');
+            iframe.src = '';
+            fullscreenVideo.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.querySelector('.fullscreen-video').addEventListener('click', (e) => {
+            if (e.target.classList.contains('fullscreen-video')) {
+                closeFullscreenVideo();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeFullscreenVideo();
+            }
+        });
+
+        (function() {
+            emailjs.init("RpHB1x11B_Hrw9LWp");
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // הצגת אנימציית טעינה בכפתור
+            const button = this.querySelector('button');
+            const originalText = button.textContent;
+            button.textContent = 'שולח...';
+            button.disabled = true;
+
+            emailjs.sendForm('service_87uu9jx', 'template_1in07ze', this)
+                .then(() => {
+                    alert('ההודעה נשלחה בהצלחה!');
+                    this.reset();
+                })
+                .catch((error) => {
+                    alert('שגיאה בשליחת ההודעה, אנא נסו שוב מאוחר יותר');
+                    console.error(error);
+                })
+                .finally(() => {
+                    button.textContent = originalText;
+                    button.disabled = false;
+                });
+        });
+    </script>
+</body>
+</html>

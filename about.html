@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <title>אודות - Flow</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <nav class="navbar">
+        <button class="hamburger" onclick="toggleSidebar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <div class="logo">
+            <img src="images/flow-logo.png" alt="Flow" class="logo-image">
+        </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <div class="sidebar-content">
+            <a href="#about">אודות</a>
+            <a href="#robot">הרובוט שלנו</a>
+            <a href="#research">מחקר</a>
+            <a href="#runs">הרצות רובוט</a>
+            <a href="#downloads">הורדות</a>
+        </div>
+    </div>
+
+    <main class="about-container">
+        <h1 class="about-title">אודות</h1>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    אנחנו צוות של מהנדסים ומדענים המתמחים בפיתוח פתרונות רובוטיים מתקדמים.
+                    המשימה שלנו היא לקדם את תחום הרובוטיקה ולפתח פתרונות חדשניים שישפרו את חיי היומיום.
+                </p>
+                <p>
+                    הצוות שלנו מורכב ממומחים בתחומי הרובוטיקה, בינה מלאכותית, ותכנות מתקדם,
+                    כולם עובדים יחד כדי ליצור את הדור הבא של פתרונות רובוטיים.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="https://placehold.co/400x300" alt="תמונת צוות" class="team-image">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        document.addEventListener('click', (e) => {
+            const sidebar = document.getElementById('sidebar');
+            const hamburger = document.querySelector('.hamburger');
+            if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html> 
