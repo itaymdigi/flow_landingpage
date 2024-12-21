@@ -675,12 +675,34 @@ h2 {
     }
     
     .research-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;  /* כפייה של עמודה אחת */
         gap: 2rem;
     }
 
+    .research-text {
+        order: 1;  /* הטקסט יופיע ראשון */
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .research-gallery {
+        order: 2;  /* התמונות יופיעו אחרי הטקסט */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;  /* עמודה אחת של תמונות */
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .gallery-item {
+        width: 100%;
+        margin: 0;
+    }
+
     .gallery-item img {
+        width: 100%;
         height: 250px;
+        object-fit: contain;
     }
 }
 
@@ -1094,7 +1116,7 @@ model-viewer {
         padding: 0 0.5rem;
     }
 
-    /* שיפור מרווחים בכותרות */
+    /* שיפור מרווחי�� בכותרות */
     h2 {
         font-size: 2.2rem;
         margin-bottom: 2rem;
