@@ -48,7 +48,7 @@
                     הרחבנו את הידע שלנו בתכנות הרובוט, בניית זרועות ותכנון אסטרטגיות אופטימליות.
                 </p>
                 <p>
-                    למדנו לעומ�� על האוקיינוס ואיך לעזור לחקור אותו בצורה טובה יותר.
+                    למדנו לעומק על האוקיינוס ואיך לעזור לחקור אותו בצורה טובה יותר.
                 </p>
             </div>
             <div class="about-image">
@@ -145,9 +145,12 @@
             <div class="robot-text">
                 <h3>מפרט טכני</h3>
                 <ul>
-                    <li>גודל: 15 על 19 על 13 (לגומטר)</li>
-                    <li>חיישנים: צבע, מרחק, ג'ירו</li>
-                    <li>חלקים: 1000+ חלקי לגו</li>
+                    <li>מידות: 16 ס''מ אורך על 12 ס''מ רוחב</li>
+                    <li>מרכז מסה: אמצע</li>
+                    <li>בקרת נסיעה וסיבוב: PID</li>
+                    <li>מרווח צירי מנועי זרועות: 4 ס''מ</li>
+                    <li>שפת תכנות: Python</li>
+                    <li>סוג גלגלים: גלגלי "אופנוע" צרים ורחבים</li>
                 </ul>
             </div>
         </div>
@@ -251,35 +254,118 @@
     <section id="team" class="team">
         <h2>הצוות שלנו</h2>
         <div class="team-grid">
+            <!-- מנטורים -->
             <div class="team-member">
                 <div class="member-image">
-                    <img src="https://placehold.co/180x180/CCCCCC/555555?text=חבר+צוות" alt="חבר צוות">
+                    <img src="https://placehold.co/200x200/CCCCCC/666666?text=מנטור" alt="מנטור 1">
                 </div>
                 <div class="member-info">
-                    <h3>ישראל ישראלי</h3>
-                    <p class="member-age">גיל: 14</p>
-                    <a href="mailto:israel@example.com" class="member-email">israel@example.com</a>
+                    <h3>ליו</h3>
+                    <p class="member-role">מנטור</p>
+                    <p class="member-age">גיל:16</p>
+                    <a href="mailto:dan@example.com" class="member-email">dan@example.com</a>
                 </div>
             </div>
-            <!-- Repeat for other team members -->
+
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://placehold.co/200x200/CCCCCC/666666?text=מנטור" alt="מנטור 2">
+                </div>
+                <div class="member-info">
+                    <h3>מיקה ליברמן</h3>
+                    <p class="member-role">מנטורית</p>
+                    <p class="member-age">גיל: 16</p>
+                    <a href="mailto:michal@example.com" class="member-email">libermanova@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- תלמידים -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="project/assets/images/team/placeholder.jpg" alt="תלמיד 1">
+                </div>
+                <div class="member-info">
+                    <h3>קייל</h3>
+                    <p class="member-role">מנטור</p>
+                    <p class="member-age">גיל:16</p>
+                    <a href="mailto:yuval@example.com" class="member-email">yuval@example.com</a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="project/assets/images/team/placeholder.jpg" alt="תלמידה 1">
+                </div>
+                <div class="member-info">
+                    <h3>נועה כהן</h3>
+                    <p class="member-role">תלמידה</p>
+                    <p class="member-age">גיל: 13</p>
+                    <a href="mailto:noa@example.com" class="member-email">noa@example.com</a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="project/assets/images/team/placeholder.jpg" alt="תלמיד 2">
+                </div>
+                <div class="member-info">
+                    <h3>עידו שמואלי</h3>
+                    <p class="member-role">תלמיד</p>
+                    <p class="member-age">גיל: 14</p>
+                    <a href="mailto:ido@example.com" class="member-email">ido@example.com</a>
+                </div>
+            </div>
+
+            <!-- המשך התלמידים... -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://placehold.co/200x200/CCCCCC/666666?text=תמונה" alt="חבר צוות">
+                </div>
+                <div class="member-info">
+                    <h3>שם מלא</h3>
+                    <p class="member-role">תלמיד/מנטור</p>
+                    <p class="member-age">גיל: __</p>
+                    <a href="mailto:email@example.com" class="member-email">email@example.com</a>
+                </div>
+            </div>
+
+            <!-- המשך עד 15 חברי צוות... -->
+            <!-- העתקתי רק 6 לדוגמה, צריך להוסיף עוד 9 -->
+            
+            <!-- תבנית להעתקה:
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="project/assets/images/team/placeholder.jpg" alt="חבר צוות">
+                </div>
+                <div class="member-info">
+                    <h3>שם מלא</h3>
+                    <p class="member-role">תלמיד/מנטור</p>
+                    <p class="member-age">גיל: __</p>
+                    <a href="mailto:email@example.com" class="member-email">email@example.com</a>
+                </div>
+            </div>
+            -->
         </div>
     </section>
 
     <section id="downloads" class="downloads">
-        <h2>הורדות</h2>
+        <h2>הורדות וקישורים</h2>
         <div class="downloads-container">
             <div class="download-links">
-                <a href="#" class="download-link">
+                <a href="https://shop.stealth.com/compare?items=267472" class="download-link" target="_blank">
                     <span class="download-icon">📄</span>
-                    <span class="download-text">MiniPC Rugged Data Sheet</span>
+                    <span class="download-text">מיני מחשב מוקשח דף נתונים</span>
                 </a>
-                <a href="#" class="download-link">
+                <a href="https://www.boomarine.com/products/mooring-buoy" class="download-link" target="_blank">
                     <span class="download-icon">📄</span>
-                    <span class="download-text">Mooring Buoy Data Sheet</span>
+                    <span class="download-text">מצוף דף נתונים</span>
                 </a>
-                <a href="#" class="download-link">
+                <a href="https://www.polycase.com/sa-33" class="download-link" target="_blank">
                     <span class="download-icon">📄</span>
-                    <span class="download-text">Stainless Steel Box Data Sheet</span>
+                    <span class="download-text">קופסת אל חלד דף נתונים</span>
+                <a href="https://cdn.sparkfun.com/assets/c/0/9/e/1/RockBLOCK-Product-Information-Sheet.pdf" class="download-link" target="_blank">
+                    <span class="download-icon">📄</span>
+                    <span class="download-text">משדר תקשורת לווינית ישירה</span>
                 </a>
             </div>
         </div>
